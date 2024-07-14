@@ -1,0 +1,55 @@
+body {
+  background-color: #fff; /* White background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: transparent; /* Transparent header background */
+}
+
+img {
+  width: 80%; /* Responsive width based on viewport size */
+  max-width: 250px; /* Limit maximum width on larger screens */
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 24px; /* Adjust font size as needed */
+  margin-top: 20px; /* Adjust margin as needed */
+  margin-bottom: 10px; /* Adjust margin as needed */
+  text-align: center; /* Assuming you want it centered */
+  color: #333; /* Dark gray text (adjustable) */
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: center; /* Center elements vertically */
+  }
+.tasks-list {
+  display: flex; /* Arrange tasks horizontally (optional) */
+  flex-direction: column; /* Stack tasks vertically */
+  gap: 10px; /* Add space between tasks */
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.tasks-list li {
+  display: flex; /* Arrange checkbox and link horizontally */
+  align-items: center; /* Align checkbox and link vertically */
+}
+
+.tasks-list li input[type="checkbox"] {
+  margin-right: 10px; /* Add space between checkbox and link */
+}
+
+.tasks-list input[type="checkbox"]:checked {
+  background-color: #2ECC71; /* Green for checked state */
+}
