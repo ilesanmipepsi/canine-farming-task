@@ -1,7 +1,7 @@
 body {
   background-color: #fff; /* White background */
   font-family: Arial, sans-serif;
-  margin: 0;
+  margin: 20px calc(100vw - 960px) / 2;
   padding: 0;
 }
 
